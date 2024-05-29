@@ -23,7 +23,7 @@ function App() {
   console.log(jsonData)
   return (
     <AppContext.Provider value={PropTypes}>   {/* Wrappo all'interno di AppContext navbar e cards */}
-      <div>
+      <div style={{flex: 1}}>
         <Navbar />
         
         {!checked && <Cards />}
