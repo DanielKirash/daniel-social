@@ -1,48 +1,49 @@
-.textarea{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90vh;
+.textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
 }
-#title{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    width: 50%;
-    padding: 10px;
-    border-radius: 10px;
-    resize: none;
+#title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
 }
-#content{
-    width: 50%;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    height: 80%;
-    resize: none;
+#content {
+  width: 50%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  height: 80%;
+  resize: none;
 }
 .postadd {
-    margin-top: 20px;
-    background-color: #A4D3B3; 
-    margin-right: 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 20px;
-    color: white; 
-    padding: 10px 20px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px;
+  background-color: #a4d3b3;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .postadd:hover {
-    background-color: #89CFF0; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    transform: translateY(-2px);
+  background-color: #89cff0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .postadd:active {
-    background-color: #5A8FD8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transform: translateY(0); 
+  background-color: #5a8fd8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
 }
