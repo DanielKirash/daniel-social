@@ -1,11 +1,17 @@
+.allCards{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
 .cards {
-    background-color: #E8F0FE; /* Azzurro Pastello */
+    background-color: #E8F0FE; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     max-width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 440px;
   }
   
   .cards:hover {
@@ -17,7 +23,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    color: #5A8FD8; /* Blu Pastello */
+    color: #5A8FD8;
     margin-bottom: 10px;
   }
   
@@ -33,13 +39,33 @@
     justify-content: space-between;
   }
   
-  .like, .comments {
+  
+  .views{
     font-family: 'Arial', sans-serif;
     font-size: 14px;
-    color: #A4D3B3; /* Verde Menta Pastello */
+    color: #5A8FD8;
     background-color: #ffffff;
     border-radius: 5px;
     padding: 5px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.like{
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: red;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .cards{
+        min-width: 350px;
+    }
   }
-  
+  @media screen and (max-width: 350px) {
+    .cards{
+        min-width: 100px;
+    }
+  }

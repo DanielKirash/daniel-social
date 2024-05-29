@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.css'
+import { AppContext } from '../../context/AppContext';
 
 function Navbar() {
+
+    const context = useContext(AppContext)
+
+    function controlCheck(){
+        if(context?.checked === false){
+            context.setChecked(true)
+        }else{
+            context?.setChecked(false)
+        }
+    }
+
   return (
     <div className='nav'>
         <h1 className='sname'>ConnettiME</h1>
         <div>
-            <button className='add'>Aggiungi Post</button>
+            <button className='add' onClick={controlCheck}>Aggiungi Post</button>
         </div>
     </div>
   );

@@ -4,11 +4,13 @@ import Navbar from './components/navbar';
 import Cards from './components/postcard';
 import { Tpost } from './types.ts/commontypes';
 import { AppContext } from './context/AppContext';
+import Textarea from './components/textarea';
 
 function App() {
   const[jsonData , setJsonData] = useState<Tpost[]>()
+  const[checked, setChecked] = useState(false)
 
-  const PropTypes = {jsonData, setJsonData}
+  const PropTypes = {jsonData, setJsonData, checked, setChecked}
 
 
   useEffect(() => {           //Utilizzo useEffect per eseguire una sola volta il comando a fine render
@@ -18,12 +20,15 @@ function App() {
       .catch(error => console.error('Errore durante il fetch dei dati:', error));  
   },[])
 
-  
+  console.log(jsonData)
   return (
-    <AppContext.Provider value={PropTypes}>
+    <AppContext.Provider value={PropTypes}>   {/* Wrappo all'interno di AppContext navbar e cards */}
       <div>
         <Navbar />
-        <Cards />
+        
+        {!checked && <Cards />}
+
+        {checked && <Textarea />}
       </div>
     </AppContext.Provider>
   );

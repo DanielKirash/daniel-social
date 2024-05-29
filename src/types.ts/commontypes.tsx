@@ -3,6 +3,6 @@ export type Tpost = {
     id: number;
     title: string;
     body: string;
-    likes: number;
-    comments: number;
+    views: number;
+    reactions: {likes:number, dislike:number}
 }
