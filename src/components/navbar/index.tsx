@@ -15,7 +15,7 @@ function Navbar() {
     }
 
   return (
-    <div className='customNnav'>
+    <div className='customNnav' style={{display:'flex', flexDirection:"row",backgroundColor:"#5A8FD8"}}>
         <h1 className='sname'>ConnettiME</h1>
         <div>
             <button className='add' onClick={controlCheck}>Aggiungi Post</button>
