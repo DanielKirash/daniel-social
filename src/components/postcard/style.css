@@ -1,0 +1,45 @@
+.cards {
+    background-color: #E8F0FE; /* Azzurro Pastello */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .title {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5A8FD8; /* Blu Pastello */
+    margin-bottom: 10px;
+  }
+  
+  .body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  .likes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .like, .comments {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #A4D3B3; /* Verde Menta Pastello */
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
