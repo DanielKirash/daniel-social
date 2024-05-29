@@ -15,7 +15,7 @@ function Navbar() {
     }
 
   return (
-    <div className='nav'>
+    <div className='customNnav'>
         <h1 className='sname'>ConnettiME</h1>
         <div>
             <button className='add' onClick={controlCheck}>Aggiungi Post</button>
