@@ -19,7 +19,7 @@ function Cards() {
             <div className="body">{item.body}</div>
             <div className="likes">
               <div className="views">👁️ {item.views}</div>
-              <div className="like"><div className="textPulse">❤️ {item.reactions.likes}</div></div>
+              <div className="like">❤️ {item.reactions.likes}</div>
             </div>
           </div>
         ))}
