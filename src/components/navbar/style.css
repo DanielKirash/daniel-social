@@ -1,29 +1,35 @@
-
-
 .add:hover {
-    background-color: #89CFF0; 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-    transform: translateY(-2px);
+  background-color: #89cff0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .add:active {
-    background-color: #5A8FD8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transform: translateY(0); 
+  background-color: #5a8fd8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
 }
 .sname {
-    font-family: 'Arial', sans-serif; 
-    font-size: 28px;
-    font-weight: bold; 
-    color: black; 
-    margin-left: 20px; 
-    padding: 0 20px; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    transition: color 0.3s ease; 
+  font-family: "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+  padding: 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
 }
 
 .sname:hover {
-    color: #89CFF0; 
-    cursor: pointer;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  color: #89cff0;
+  cursor: pointer;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.body{
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  button.postadd{
+    min-width: none;
+  }
 }
