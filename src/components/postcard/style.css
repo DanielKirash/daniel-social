@@ -26,7 +26,7 @@
   font-weight: bold;
   color: #5a8fd8;
   margin-bottom: 10px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .body {
@@ -34,7 +34,7 @@
   font-size: 16px;
   color: #333333;
   margin-bottom: 15px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .likes {
@@ -62,6 +62,12 @@
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 1s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .like:active {
@@ -71,7 +77,9 @@
   box-shadow: 0 4px 8px #ff000066;
   cursor: pointer;
 }
-
+.tags{
+  opacity: 20%;
+}
 @media screen and (max-width: 600px) {
   .cards {
     transition: 2s;

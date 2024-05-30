@@ -6,7 +6,7 @@ function Textarea() {
   //Definisco stati locali per settare titolo e contenuto
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-
+  const [tag, setTag] = useState("");
   //Recupero il contesto dell'AppContext
   const context = useContext(AppContext);
 
@@ -21,6 +21,7 @@ function Textarea() {
         id: context.jsonData.length + 1,
         views: 0,
         reactions: { likes: 0, dislike: 0 },
+        tags: [tag] 
       };
 
       //Aggiungo il nuovo post all'array JsonData (grazie al context)
@@ -46,6 +47,11 @@ function Textarea() {
         id="content"
         onChange={(e) => setContent((e.target.value))} //Aggiorno lo stato di body quando digito
       ></textarea>
+      <textarea
+      placeholder="Inserisci il tag"
+      id="tags"
+      onChange={(e) => setTag((e.target.value))}>
+      </textarea>
       <div>
         <button
           className="postadd"

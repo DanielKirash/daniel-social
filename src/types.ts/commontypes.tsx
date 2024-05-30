@@ -5,4 +5,5 @@ export type Tpost = {
   body: string;
   views: number;
   reactions: { likes: number; dislike: number };
+  tags: Object
 };

@@ -21,6 +21,13 @@
   height: 80%;
   resize: none;
 }
+#tags{
+  margin-top: 10px;
+  width: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+}
 .postadd {
   margin-top: 20px;
   background-color: #a4d3b3;

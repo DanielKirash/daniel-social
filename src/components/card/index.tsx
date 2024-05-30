@@ -17,6 +17,7 @@ function Comp({element}:any) {
               </div>
               <div className="likes">
                 <div className="views">👁️ {view}</div>
+                <div className="tags">#{element.tags}</div>
                 <div className="like" onClick={() => setLike(like+1)}>❤️ {like}</div>
               </div>
             </div>
